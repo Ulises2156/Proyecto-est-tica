@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Personal</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+</head>
+<body>
+    <h1>Lista de Personal</h1>
+    <ul>
+        {% for persona in personal %}
+            <li><a href="{% url 'detalle_personal' personal.id%}">{{persona.nombre}} {{persona.apellido}}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de la Reserva</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+</head>
+<body>
+    <h1>Detalles de la Reserva</h1>
+    <p><strong>Cliente:</strong> {{reserva.cliente}}</p>
+    <p><strong>Fecha y Hora de la Reserva</strong> {{reserva.fecha_hora_reserva}}</p>
+    <p><a href="{% url 'lista_reserva' %}"> Volver a la lista de reserva</p>
+</body>
+</html>

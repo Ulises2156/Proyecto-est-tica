@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pagos</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+</head>
+<body>
+    <h1>Lista de Pagos</h1>
+    <ul>
+        {% for pago in pagos %}
+            <li><a href="{% url 'detalle_pago' pago.id %}">{{pago.reserva_asociada}} - {{pago.fecha_hora_pago}}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

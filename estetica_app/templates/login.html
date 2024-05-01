@@ -1,0 +1,105 @@
+{% login static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estética XYZ</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- Custom CSS -->
+  <style>
+    /* Estilos personalizados */
+    /* Barra de navegación */
+    .navbar-brand {
+      font-size: 24px;
+    }
+    .navbar-nav.ml-auto a {
+      margin-left: 10px;
+    }
+    /* Contenido principal */
+    .container {
+      padding-top: 20px;
+    }
+    .jumbotron {
+      background-color: #faf8f8;
+    }
+    /* Formulario de inicio de sesión */
+    #login-form {
+      max-width: 400px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Estética XYZ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Iniciar Sesión</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Registrarse</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3">
+      <!-- Barra de navegación lateral -->
+      <h3>Lugar de la Estética</h3>
+      <ul>
+        <li><a href="#">Servicio 1</a></li>
+        <li><a href="#">Servicio 2</a></li>
+        <li><a href="#">Servicio 3</a></li>
+        <!-- Agrega más servicios aquí -->
+      </ul>
+    </div>
+    <div class="col-lg-9">
+      <!-- Contenido principal -->
+      <div class="jumbotron">
+        <h1>Bienvenido a Estética XYZ</h1>
+        <p>Explora nuestros productos y servicios para una experiencia única de belleza y bienestar.</p>
+      </div>
+      <!-- Formulario de inicio de sesión -->
+      <div id="login-form">
+        <h2>Iniciar Sesión</h2>
+        <form>
+          <div class="form-group">
+            <label for="username">Usuario</label>
+            <input type="text" class="form-control" id="username" placeholder="Ingrese su usuario">
+          </div>
+          <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+          </div>
+          <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery y Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

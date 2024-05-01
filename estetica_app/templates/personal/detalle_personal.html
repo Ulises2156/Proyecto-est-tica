@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Personal</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+</head>
+<body>
+    <h1>Detalle del Personal</h1>
+    <p><strong>Nombre:</strong> {{personal.nombre}} {{personal.apellido}}</p>
+    <p><strong>Correo Electrónico:</strong> {{personal.correo_electronico}}</p>
+    <p><strong>Teléfono:</strong> {{personal.telefono}}</p>
+    <p><a href="{% url 'lista %}">Volver a la lista del personal</a> </p>
+    
+</body>
+</html>
